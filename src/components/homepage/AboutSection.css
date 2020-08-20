@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@500&display=swap");
+
+.AboutSection {
+  background-color: #a3dcbe;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  padding: 10px 200px;
+}
+
+.big-letter {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.about-header {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.about-text {
+  text-align: left;
+}
+
+.avatar-image {
+  height: 300px;
+}
