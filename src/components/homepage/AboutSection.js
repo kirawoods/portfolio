@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutSection.css";
 import { Link } from "react-router-dom";
-import avatar from "../../womanprogrammer.jpg";
+import avatar from "../../womanprogrammer.png";
 
 export function AboutSection() {
   return (
@@ -13,8 +13,9 @@ export function AboutSection() {
           I'm a self-taught software engineer and occupational therapist
           leveraging technology to re-imagine the healthcare space. My current
           projects include automation tooling to enable young adults to manage
-          their holistic mental health through data and online games for
-          children and adults with visual perceptual deficits.
+          their holistic mental health through data. I also make online games
+          that help children and adults to improve their executive functioning
+          abilities.
         </div>
         <Link className="about-button" to="/about">
           Learn More
