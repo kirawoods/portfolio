@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@500&display=swap");
+
 .ContactSection {
   width: 100%;
   background-color: #a3dcbe;
-  padding: 20px 0;
   height: 400px;
+  padding: 20px 0 0 0;
+}
+
+.contact-section-text-container {
+  width: 500px;
+  margin: 0 auto;
 }
 
 .contact-header {
@@ -15,4 +22,14 @@
   width: 50px;
   border-top: 1px black solid;
   margin: 5px auto 20px auto;
+}
+
+.contact-subheading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  padding: 20px 0;
+}
+
+.contact-section-text {
+  font-family: "Open Sans", sans-serif;
 }
