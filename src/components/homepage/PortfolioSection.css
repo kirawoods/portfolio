@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@500&display=swap");
+
+.PortfolioSection {
+  margin: 50px auto;
+  width: 80%;
+}
+
+.portfolio-header {
+  margin: 20px 0 0 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+
+.horizontal-line {
+  width: 50px;
+  border-top: 1px black solid;
+  margin: 5px auto 20px auto;
+}
+
+.featured-project {
+  height: 400px;
+  background-color: #fcce77;
+  border-radius: 4px;
+}
+
+.other-projects-container {
+  display: flex;
+  margin: 30px 0 40px 0;
+  justify-content: space-between;
+}
+
+.project {
+  width: 32%;
+  height: 350px;
+  background: #f1957e;
+  border-radius: 4px;
+}
+
+.portfolio-button {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  border: 2px black solid;
+  font-weight: 900;
+  border-radius: 2px;
+  font-family: "Raleway", sans-serif;
+}
