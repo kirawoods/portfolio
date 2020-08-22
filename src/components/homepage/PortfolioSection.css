@@ -50,6 +50,14 @@
   background-color: #f1957e;
 }
 
+.advo-container:hover {
+  background: white;
+}
+
+.advo-description {
+  color: #f1957e;
+}
+
 .mastermind-logo {
   width: 300px;
   padding: 140px 0;
