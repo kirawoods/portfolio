@@ -25,7 +25,9 @@ export function ContactSection() {
           <img src={email} className="email-icon" />
           <div className="contact-info">kawoods826@gmail.com</div>
         </div>
-        <img src={arrow} className="back-to-top-button" />
+        <a href="#top">
+          <img src={arrow} className="back-to-top-button" />
+        </a>
       </div>
     </div>
   );

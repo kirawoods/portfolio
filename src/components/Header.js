@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 export function Header() {
   return (
     <div className="Header">
+      <a name="top"></a>
       <Link className="name" to="/">
         KIRA WOODS
       </Link>

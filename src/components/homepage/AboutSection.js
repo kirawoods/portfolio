@@ -6,6 +6,7 @@ import avatar from "../../womanprogrammer.png";
 export function AboutSection() {
   return (
     <div className="AboutSection">
+      <a name="top"></a>
       <div className="text-section">
         <div className="big-letter">k</div>
         <div className="about-header">Hi, I'm Kira. I make things.</div>
