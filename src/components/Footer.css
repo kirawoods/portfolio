@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@500&display=swap");
+
 .Footer {
   background-color: black;
   color: white;
-  height: 100px;
-  padding: 20px;
+  height: 70px;
+  padding: 30px;
+}
+
+.footer-contact-info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
 }
 
 .social-images-container {
