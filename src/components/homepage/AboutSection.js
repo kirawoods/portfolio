@@ -13,8 +13,8 @@ export function AboutSection() {
           I'm a self-taught software engineer and occupational therapist
           leveraging technology to re-imagine the healthcare space. My current
           projects include automation tooling to enable young adults to manage
-          their holistic mental health through data. I also make online games
-          that help children and adults improve their executive functioning.
+          their holistic mental health and online games that help children and
+          adults improve their executive functioning.
         </div>
         <Link className="about-button" to="/about">
           LEARN MORE
