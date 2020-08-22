@@ -1,0 +1,15 @@
+.Footer {
+  background-color: black;
+  color: white;
+  height: 100px;
+  padding: 20px;
+}
+
+.social-images-container {
+  margin-top: 20px;
+}
+
+.footer-social-logo {
+  height: 25px;
+  margin: 0 10px;
+}
