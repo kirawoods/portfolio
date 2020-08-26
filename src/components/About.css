@@ -1,0 +1,18 @@
+.About {
+  margin: 0 300px;
+}
+
+.timeline-text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.timeline-section {
+  width: 400px;
+  text-align: left;
+  background-color: #a3dcbe;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 5px;
+}
