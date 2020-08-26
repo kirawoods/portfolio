@@ -1,5 +1,6 @@
-.About {
-  margin: 0 300px;
+.timeline-container {
+  display: flex;
+  justify-content: center;
 }
 
 .timeline-text-container {
@@ -12,7 +13,15 @@
   width: 400px;
   text-align: left;
   background-color: #a3dcbe;
-  margin: 10px;
+  margin: 10px 0 50px 20px;
   padding: 30px;
   border-radius: 5px;
+}
+
+.vertical-line {
+  margin: 10px 0;
+  height: 2016px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  width: 4px;
 }
