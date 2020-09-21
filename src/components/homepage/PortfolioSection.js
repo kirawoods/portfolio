@@ -39,16 +39,18 @@ export class PortfolioSection extends Component {
               <a
                 href="https://sfrestaurants.netlify.app/"
                 target="blank"
-                className="featured-site-link"
+                className="featured-site-link-left"
               >
-                Go to Site
+                <div className="featured-link-text">Go to Site</div>
+                <div className="left-horizontal-line"></div>
               </a>
               <a
                 href="https://github.com/kirawoods/sf-restaurant-safety"
                 target="blank"
-                className="featured-site-link"
+                className="featured-site-link-right"
               >
-                Go to Code
+                <div className="featured-link-text">Go to Code</div>
+                <div className="right-horizontal-line"></div>
               </a>
             </div>
           ) : (

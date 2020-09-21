@@ -23,19 +23,55 @@
   border-radius: 4px;
 }
 
-.featured-site-links-container {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 150px;
+.featured-project:hover {
+  background-color: white;
 }
 
-.featured-site-link {
+.featured-site-links-container {
+  display: flex;
+}
+
+.featured-site-link-left {
   background-color: black;
   color: white;
   text-decoration: none;
-  padding: 50px;
-  border-radius: 30px;
+  width: 50%;
+  height: 40px;
+  padding: 120px 0;
   font-family: "Raleway", sans-serif;
+  transform: skewY(11deg);
+  margin-top: 60px;
+}
+
+.left-horizontal-line {
+  width: 50px;
+  border-top: 1px white solid;
+  margin: 5px auto 20px auto;
+  transform: skewY(-11deg);
+}
+.featured-site-link-right {
+  background-color: #f1957e;
+  color: black;
+  text-decoration: none;
+  width: 50%;
+  height: 40px;
+  padding: 120px 0;
+  margin-top: 60px;
+  transform: skewY(11deg);
+}
+
+.right-horizontal-line {
+  width: 50px;
+  border-top: 1px black solid;
+  margin: 5px auto 20px auto;
+  transform: skewY(-11deg);
+}
+
+.featured-link-text {
+  font-family: "Raleway", sans-serif;
+  transform: skewY(-11deg);
+  font-size: 40px;
+  font-weight: 100;
 }
 
 .other-projects-container {
