@@ -9,20 +9,42 @@ export class PortfolioSection extends Component {
   constructor() {
     super();
     this.state = {
-      isMouseInside: false,
+      isMouseInsideFeatured: false,
+      isMouseInsideMastermind: false,
+      isMouseInsideHelperHelper: false,
     };
   }
   getInitialState() {
     return {
-      isMouseInside: false,
+      isMouseInsideFeatured: false,
+      isMouseInsideMastermind: false,
+      isMouseInsideHelperHelper: false,
     };
   }
-  mouseEnter = () => {
-    this.setState({ isMouseInside: true });
+  mouseEnterFeatured = () => {
+    this.setState({ isMouseInsideFeatured: true });
   };
-  mouseLeave = () => {
-    this.setState({ isMouseInside: false });
+
+  mouseLeaveFeatured = () => {
+    this.setState({ isMouseInsideFeatured: false });
   };
+
+  mouseEnterMastermind = () => {
+    this.setState({ isMouseInsideMastermind: true });
+  };
+
+  mouseLeaveMastermind = () => {
+    this.setState({ isMouseInsideMastermind: false });
+  };
+
+  mouseEnterHelperHelper = () => {
+    this.setState({ isMouseInsideHelperHelper: true });
+  };
+
+  mouseLeaveHelperHelper = () => {
+    this.setState({ isMouseInsideHelperHelper: false });
+  };
+
   render() {
     return (
       <div className="PortfolioSection">
@@ -31,26 +53,24 @@ export class PortfolioSection extends Component {
 
         <div
           className="featured-project"
-          onMouseEnter={this.mouseEnter}
-          onMouseLeave={this.mouseLeave}
+          onMouseEnter={this.mouseEnterFeatured}
+          onMouseLeave={this.mouseLeaveFeatured}
         >
-          {this.state.isMouseInside ? (
+          {this.state.isMouseInsideFeatured ? (
             <div className="featured-site-links-container">
               <a
                 href="https://sfrestaurants.netlify.app/"
                 target="blank"
                 className="featured-site-link-left"
               >
-                <div className="featured-link-text">Go to Site</div>
-                <div className="left-horizontal-line"></div>
+                <div className="featured-link-text">GO TO SITE</div>
               </a>
               <a
                 href="https://github.com/kirawoods/sf-restaurant-safety"
                 target="blank"
                 className="featured-site-link-right"
               >
-                <div className="featured-link-text">Go to Code</div>
-                <div className="right-horizontal-line"></div>
+                <div className="featured-link-text">GO TO CODE</div>
               </a>
             </div>
           ) : (
@@ -58,10 +78,31 @@ export class PortfolioSection extends Component {
           )}
         </div>
         <div className="other-projects-container">
-          <div className="project mastermind-container">
-            <a href="https://mastermindkw.netlify.app/" target="blank">
+          <div
+            className="project mastermind-container"
+            onMouseEnter={this.mouseEnterMastermind}
+            onMouseLeave={this.mouseLeaveMastermind}
+          >
+            {this.state.isMouseInsideMastermind ? (
+              <div className="mastermind-site-links-container">
+                <a
+                  href="https://mastermindkw.netlify.app/"
+                  target="blank"
+                  className="site-link"
+                >
+                  <div className="link-text">GO TO SITE</div>
+                </a>
+                <a
+                  href="https://github.com/kirawoods/mastermind"
+                  target="blank"
+                  className="site-link"
+                >
+                  <div className="link-text">GO TO CODE</div>
+                </a>
+              </div>
+            ) : (
               <img className="mastermind-logo" src={mastermind} />
-            </a>
+            )}
           </div>
 
           <div className="project advo-container">
@@ -73,10 +114,33 @@ export class PortfolioSection extends Component {
               interested in learning more, please contact me.
             </div>
           </div>
-          <div className="project">
-            <a href="https://helperhelper.netlify.app/" target="blank">
-              <img className="helper-helper-logo" src={helperhelper} />
-            </a>
+          <div
+            className="project helper-helper-container"
+            onMouseEnter={this.mouseEnterHelperHelper}
+            onMouseLeave={this.mouseLeaveHelperHelper}
+          >
+            {this.state.isMouseInsideHelperHelper ? (
+              <div>
+                <a
+                  href="https://github.com/kirawoods/mastermind"
+                  target="blank"
+                  className="site-link"
+                >
+                  <div className="link-text"> GO TO SITE</div>
+                </a>
+                <a
+                  href="https://github.com/kirawoods/mastermind"
+                  target="blank"
+                  className="site-link"
+                >
+                  <div className="link-text"> GO TO CODE</div>
+                </a>
+              </div>
+            ) : (
+              <a href="https://helperhelper.netlify.app/" target="blank">
+                <img className="helper-helper-logo" src={helperhelper} />
+              </a>
+            )}
           </div>
         </div>
 
